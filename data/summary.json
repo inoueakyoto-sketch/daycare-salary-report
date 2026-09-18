@@ -1,0 +1,717 @@
+{
+  "updated_at": "2026年09月18日",
+  "rows": [
+    {
+      "city": "大津市",
+      "facility": "ミライク大津唐崎教室",
+      "role": "児童指導員",
+      "employment": "正職員",
+      "pay_type": "月給",
+      "pay_min": 200000,
+      "pay_max": 220000
+    },
+    {
+      "city": "大津市",
+      "facility": "ミライク大津唐崎教室",
+      "role": "児童指導員",
+      "employment": "パート",
+      "pay_type": "時給",
+      "pay_min": 1080,
+      "pay_max": 1500
+    },
+    {
+      "city": "大津市",
+      "facility": "レインスマイルキッズ",
+      "role": "児童指導員",
+      "employment": "正職員",
+      "pay_type": "月給",
+      "pay_min": 215000,
+      "pay_max": 250000
+    },
+    {
+      "city": "大津市",
+      "facility": "レインスマイルキッズ",
+      "role": "児童指導員",
+      "employment": "パート",
+      "pay_type": "時給",
+      "pay_min": 1300,
+      "pay_max": 1400
+    },
+    {
+      "city": "大津市",
+      "facility": "まるさんかくしかくぜぜ",
+      "role": "児童指導員",
+      "employment": "正職員",
+      "pay_type": "月給",
+      "pay_min": 220000,
+      "pay_max": 250000
+    },
+    {
+      "city": "大津市",
+      "facility": "まるさんかくしかくぜぜ",
+      "role": "児童指導員",
+      "employment": "パート",
+      "pay_type": "時給",
+      "pay_min": 1200,
+      "pay_max": 1500
+    },
+    {
+      "city": "大津市",
+      "facility": "あそびばJam",
+      "role": "児童指導員",
+      "employment": "正職員",
+      "pay_type": "月給",
+      "pay_min": 220000,
+      "pay_max": 260000
+    },
+    {
+      "city": "大津市",
+      "facility": "あそびばJam",
+      "role": "児童指導員",
+      "employment": "パート",
+      "pay_type": "時給",
+      "pay_min": 1330,
+      "pay_max": 1330
+    },
+    {
+      "city": "大津市",
+      "facility": "ぐっどらいふ",
+      "role": "児童指導員",
+      "employment": "正職員",
+      "pay_type": "月給",
+      "pay_min": 205000,
+      "pay_max": 230000
+    },
+    {
+      "city": "大津市",
+      "facility": "ぐっどらいふ",
+      "role": "児童指導員",
+      "employment": "パート",
+      "pay_type": "時給",
+      "pay_min": 1100,
+      "pay_max": 1300
+    },
+    {
+      "city": "大津市",
+      "facility": "シーズステップ",
+      "role": "児童指導員",
+      "employment": "正職員",
+      "pay_type": "月給",
+      "pay_min": 215000,
+      "pay_max": 250000
+    },
+    {
+      "city": "大津市",
+      "facility": "シーズステップ",
+      "role": "児童指導員",
+      "employment": "パート",
+      "pay_type": "時給",
+      "pay_min": 1100,
+      "pay_max": 1300
+    },
+    {
+      "city": "大津市",
+      "facility": "シーズステップ2nd BASE",
+      "role": "児童指導員",
+      "employment": "正職員",
+      "pay_type": "月給",
+      "pay_min": 215000,
+      "pay_max": 250000
+    },
+    {
+      "city": "大津市",
+      "facility": "シーズステップ2nd BASE",
+      "role": "児童指導員",
+      "employment": "パート",
+      "pay_type": "時給",
+      "pay_min": 1100,
+      "pay_max": 1300
+    },
+    {
+      "city": "大津市",
+      "facility": "まるさんかくしかく",
+      "role": "児童指導員",
+      "employment": "正職員",
+      "pay_type": "月給",
+      "pay_min": 200000,
+      "pay_max": 250000
+    },
+    {
+      "city": "大津市",
+      "facility": "ウィズ・ユー大津堅田",
+      "role": "児童指導員",
+      "employment": "正職員",
+      "pay_type": "月給",
+      "pay_min": 210000,
+      "pay_max": 240000
+    },
+    {
+      "city": "大津市",
+      "facility": "ウィズ・ユー大津堅田",
+      "role": "児童指導員",
+      "employment": "パート",
+      "pay_type": "時給",
+      "pay_min": 1100,
+      "pay_max": 1400
+    },
+    {
+      "city": "大津市",
+      "facility": "こころねくろづ",
+      "role": "児童指導員",
+      "employment": "正職員",
+      "pay_type": "月給",
+      "pay_min": 190000,
+      "pay_max": 285000
+    },
+    {
+      "city": "大津市",
+      "facility": "こころねくろづ",
+      "role": "児童指導員",
+      "employment": "パート",
+      "pay_type": "時給",
+      "pay_min": 1100,
+      "pay_max": 1100
+    },
+    {
+      "city": "大津市",
+      "facility": "ひいらぎの-月希-",
+      "role": "児童指導員",
+      "employment": "正職員",
+      "pay_type": "月給",
+      "pay_min": 195000,
+      "pay_max": 195000
+    },
+    {
+      "city": "大津市",
+      "facility": "ひいらぎの-月希-",
+      "role": "児童指導員",
+      "employment": "パート",
+      "pay_type": "時給",
+      "pay_min": 1136,
+      "pay_max": 1136
+    },
+    {
+      "city": "大津市",
+      "facility": "ハニカムkids",
+      "role": "児発管",
+      "employment": "正職員",
+      "pay_type": "月給",
+      "pay_min": 250000,
+      "pay_max": 250000
+    },
+    {
+      "city": "大津市",
+      "facility": "ミライク大津唐崎教室",
+      "role": "児発管",
+      "employment": "正職員",
+      "pay_type": "月給",
+      "pay_min": 280000,
+      "pay_max": 350000
+    },
+    {
+      "city": "大津市",
+      "facility": "ハニカムワークス(山百合の丘)",
+      "role": "児発管",
+      "employment": "正職員",
+      "pay_type": "月給",
+      "pay_min": 250000,
+      "pay_max": 330000
+    },
+    {
+      "city": "大津市",
+      "facility": "ひいらぎの-月希-",
+      "role": "専門職員",
+      "employment": "正職員",
+      "pay_type": "月給",
+      "pay_min": 215000,
+      "pay_max": 215000
+    },
+    {
+      "city": "大津市",
+      "facility": "ひいらぎの-月希-",
+      "role": "専門職員",
+      "employment": "パート",
+      "pay_type": "時給",
+      "pay_min": 1250,
+      "pay_max": 1250
+    },
+    {
+      "city": "大津市",
+      "facility": "ぐっどらいふ",
+      "role": "専門職員",
+      "employment": "正職員",
+      "pay_type": "月給",
+      "pay_min": 225000,
+      "pay_max": 240000
+    },
+    {
+      "city": "大津市",
+      "facility": "ハニカムkids阪本",
+      "role": "専門職員",
+      "employment": "正職員",
+      "pay_type": "月給",
+      "pay_min": 250000,
+      "pay_max": 280000
+    },
+    {
+      "city": "大津市",
+      "facility": "ハニカムkids阪本",
+      "role": "専門職員",
+      "employment": "パート",
+      "pay_type": "時給",
+      "pay_min": 1500,
+      "pay_max": 2000
+    },
+    {
+      "city": "大津市",
+      "facility": "ハニカムkids",
+      "role": "専門職員",
+      "employment": "正職員",
+      "pay_type": "月給",
+      "pay_min": 250000,
+      "pay_max": 350000
+    },
+    {
+      "city": "大津市",
+      "facility": "ミライク大津唐崎教室",
+      "role": "専門職員",
+      "employment": "パート",
+      "pay_type": "時給",
+      "pay_min": 1080,
+      "pay_max": 1500
+    },
+    {
+      "city": "大津市",
+      "facility": "ミライク大津唐崎教室",
+      "role": "専門職員",
+      "employment": "正職員",
+      "pay_type": "月給",
+      "pay_min": 220000,
+      "pay_max": 270000
+    },
+    {
+      "city": "草津市",
+      "facility": "ANERA",
+      "role": "児童指導員",
+      "employment": "正職員",
+      "pay_type": "月給",
+      "pay_min": 215000,
+      "pay_max": 215000
+    },
+    {
+      "city": "草津市",
+      "facility": "ANERA",
+      "role": "児童指導員",
+      "employment": "パート",
+      "pay_type": "時給",
+      "pay_min": 1100,
+      "pay_max": 1200
+    },
+    {
+      "city": "草津市",
+      "facility": "ジュニアスペースらいぶ草津",
+      "role": "児童指導員",
+      "employment": "正職員",
+      "pay_type": "月給",
+      "pay_min": 262000,
+      "pay_max": 300000
+    },
+    {
+      "city": "草津市",
+      "facility": "ジュニアスペースらいぶ草津",
+      "role": "児童指導員",
+      "employment": "パート",
+      "pay_type": "時給",
+      "pay_min": 1230,
+      "pay_max": 1260
+    },
+    {
+      "city": "草津市",
+      "facility": "ジュニアスペースらいぶ草津アネックス",
+      "role": "児童指導員",
+      "employment": "正職員",
+      "pay_type": "月給",
+      "pay_min": 262000,
+      "pay_max": 300000
+    },
+    {
+      "city": "草津市",
+      "facility": "ジュニアスペースらいぶ草津アネックス",
+      "role": "児童指導員",
+      "employment": "パート",
+      "pay_type": "時給",
+      "pay_min": 1330,
+      "pay_max": 1360
+    },
+    {
+      "city": "草津市",
+      "facility": "きらり草津駅前校第2",
+      "role": "児童指導員",
+      "employment": "正職員",
+      "pay_type": "月給",
+      "pay_min": 213020,
+      "pay_max": 220440
+    },
+    {
+      "city": "草津市",
+      "facility": "きらり草津駅前校",
+      "role": "児童指導員",
+      "employment": "正職員",
+      "pay_type": "月給",
+      "pay_min": 216200,
+      "pay_max": 223630
+    },
+    {
+      "city": "草津市",
+      "facility": "こころね(草津)",
+      "role": "児童指導員",
+      "employment": "正職員",
+      "pay_type": "月給",
+      "pay_min": 190000,
+      "pay_max": 285000
+    },
+    {
+      "city": "草津市",
+      "facility": "こころね(草津)",
+      "role": "児童指導員",
+      "employment": "パート",
+      "pay_type": "時給",
+      "pay_min": 1100,
+      "pay_max": 1100
+    },
+    {
+      "city": "草津市",
+      "facility": "ヒトツナ志津教室",
+      "role": "児童指導員",
+      "employment": "正職員",
+      "pay_type": "月給",
+      "pay_min": 210000,
+      "pay_max": 210000
+    },
+    {
+      "city": "草津市",
+      "facility": "ヒトツナ志津教室",
+      "role": "児童指導員",
+      "employment": "パート",
+      "pay_type": "時給",
+      "pay_min": 1100,
+      "pay_max": 1100
+    },
+    {
+      "city": "草津市",
+      "facility": "きらり草津駅前校第2",
+      "role": "児発管",
+      "employment": "正職員",
+      "pay_type": "月給",
+      "pay_min": 260000,
+      "pay_max": 350000
+    },
+    {
+      "city": "草津市",
+      "facility": "きらり草津駅前校",
+      "role": "児発管",
+      "employment": "正職員",
+      "pay_type": "月給",
+      "pay_min": 260000,
+      "pay_max": 350000
+    },
+    {
+      "city": "草津市",
+      "facility": "きらり草津駅前校",
+      "role": "専門職員",
+      "employment": "正職員",
+      "pay_type": "月給",
+      "pay_min": 223630,
+      "pay_max": 223630
+    },
+    {
+      "city": "草津市",
+      "facility": "きらり草津駅前校第2",
+      "role": "専門職員",
+      "employment": "正職員",
+      "pay_type": "月給",
+      "pay_min": 220440,
+      "pay_max": 220440
+    },
+    {
+      "city": "草津市",
+      "facility": "リニエプラッツ草津",
+      "role": "専門職員",
+      "employment": "正職員",
+      "pay_type": "月給",
+      "pay_min": 283100,
+      "pay_max": 283100
+    },
+    {
+      "city": "守山市",
+      "facility": "ドリームHARIMADA",
+      "role": "児童指導員",
+      "employment": "正職員",
+      "pay_type": "月給",
+      "pay_min": 222000,
+      "pay_max": 272000
+    },
+    {
+      "city": "守山市",
+      "facility": "ドリームHARIMADA",
+      "role": "児童指導員",
+      "employment": "パート",
+      "pay_type": "時給",
+      "pay_min": 1100,
+      "pay_max": 1200
+    },
+    {
+      "city": "守山市",
+      "facility": "ドリーム",
+      "role": "児童指導員",
+      "employment": "正職員",
+      "pay_type": "月給",
+      "pay_min": 222000,
+      "pay_max": 272000
+    },
+    {
+      "city": "守山市",
+      "facility": "ドリーム",
+      "role": "児童指導員",
+      "employment": "パート",
+      "pay_type": "時給",
+      "pay_min": 1150,
+      "pay_max": 1200
+    },
+    {
+      "city": "守山市",
+      "facility": "凜守山",
+      "role": "児童指導員",
+      "employment": "正職員",
+      "pay_type": "月給",
+      "pay_min": 195500,
+      "pay_max": 312000
+    },
+    {
+      "city": "守山市",
+      "facility": "凜元町",
+      "role": "児童指導員",
+      "employment": "パート",
+      "pay_type": "時給",
+      "pay_min": 1250,
+      "pay_max": 1496
+    },
+    {
+      "city": "守山市",
+      "facility": "凜守山",
+      "role": "児童指導員",
+      "employment": "パート",
+      "pay_type": "時給",
+      "pay_min": 1250,
+      "pay_max": 1496
+    },
+    {
+      "city": "守山市",
+      "facility": "マザーズ守山",
+      "role": "児童指導員",
+      "employment": "正職員",
+      "pay_type": "月給",
+      "pay_min": 258240,
+      "pay_max": 288170
+    },
+    {
+      "city": "守山市",
+      "facility": "マザーズ守山",
+      "role": "児童指導員",
+      "employment": "パート",
+      "pay_type": "時給",
+      "pay_min": 1320,
+      "pay_max": 1460
+    },
+    {
+      "city": "守山市",
+      "facility": "ジュニアスペース・らいぶ守山",
+      "role": "児童指導員",
+      "employment": "正職員",
+      "pay_type": "月給",
+      "pay_min": 262000,
+      "pay_max": 300000
+    },
+    {
+      "city": "守山市",
+      "facility": "ジュニアスペース・らいぶ守山",
+      "role": "児童指導員",
+      "employment": "パート",
+      "pay_type": "時給",
+      "pay_min": 1330,
+      "pay_max": 1360
+    },
+    {
+      "city": "守山市",
+      "facility": "チャイルドサポートもりやま",
+      "role": "児童指導員",
+      "employment": "正職員",
+      "pay_type": "月給",
+      "pay_min": 225000,
+      "pay_max": 275000
+    },
+    {
+      "city": "守山市",
+      "facility": "チャイルドサポートもりやま",
+      "role": "児童指導員",
+      "employment": "パート",
+      "pay_type": "時給",
+      "pay_min": 1200,
+      "pay_max": 1300
+    },
+    {
+      "city": "守山市",
+      "facility": "すくすく広場だいち",
+      "role": "児童指導員",
+      "employment": "正職員",
+      "pay_type": "月給",
+      "pay_min": 220000,
+      "pay_max": 300000
+    },
+    {
+      "city": "守山市",
+      "facility": "からふる",
+      "role": "児童指導員",
+      "employment": "正職員",
+      "pay_type": "月給",
+      "pay_min": 211500,
+      "pay_max": 211500
+    },
+    {
+      "city": "守山市",
+      "facility": "からふる",
+      "role": "児童指導員",
+      "employment": "パート",
+      "pay_type": "時給",
+      "pay_min": 1200,
+      "pay_max": 1200
+    },
+    {
+      "city": "守山市",
+      "facility": "YELL",
+      "role": "児童指導員",
+      "employment": "パート",
+      "pay_type": "時給",
+      "pay_min": 1100,
+      "pay_max": 1700
+    },
+    {
+      "city": "守山市",
+      "facility": "凜守山",
+      "role": "児発管",
+      "employment": "正職員",
+      "pay_type": "月給",
+      "pay_min": 222000,
+      "pay_max": 337000
+    },
+    {
+      "city": "守山市",
+      "facility": "からふる",
+      "role": "児発管",
+      "employment": "正職員",
+      "pay_type": "月給",
+      "pay_min": 211500,
+      "pay_max": 211500
+    },
+    {
+      "city": "守山市",
+      "facility": "YELL",
+      "role": "専門職員",
+      "employment": "パート",
+      "pay_type": "時給",
+      "pay_min": 1500,
+      "pay_max": 2100
+    },
+    {
+      "city": "守山市",
+      "facility": "チャイルドサポートもりやま",
+      "role": "専門職員",
+      "employment": "パート",
+      "pay_type": "時給",
+      "pay_min": 1400,
+      "pay_max": 1400
+    },
+    {
+      "city": "守山市",
+      "facility": "凜守山",
+      "role": "専門職員",
+      "employment": "正職員",
+      "pay_type": "月給",
+      "pay_min": 197000,
+      "pay_max": 337000
+    },
+    {
+      "city": "守山市",
+      "facility": "ゴールフリーB5守山教室",
+      "role": "専門職員",
+      "employment": "パート",
+      "pay_type": "時給",
+      "pay_min": 1080,
+      "pay_max": 1800
+    }
+  ],
+  "summary": {
+    "monthly": [
+      {
+        "n": 7,
+        "avg": 279428.5714285714,
+        "min": 211500,
+        "max": 350000,
+        "role": "児発管"
+      },
+      {
+        "n": 26,
+        "avg": 237196.15384615384,
+        "min": 190000,
+        "max": 312000,
+        "role": "児童指導員"
+      },
+      {
+        "n": 9,
+        "avg": 250185.55555555556,
+        "min": 197000,
+        "max": 350000,
+        "role": "専門職員"
+      }
+    ],
+    "hourly": [
+      {
+        "n": 24,
+        "avg": 1250.0833333333333,
+        "min": 1080,
+        "max": 1700,
+        "role": "児童指導員"
+      },
+      {
+        "n": 6,
+        "avg": 1488.3333333333333,
+        "min": 1080,
+        "max": 2100,
+        "role": "専門職員"
+      }
+    ],
+    "by_city_shido": [
+      {
+        "n": 11,
+        "avg": 225681.81818181818,
+        "min": 190000,
+        "max": 285000,
+        "city": "大津市"
+      },
+      {
+        "n": 7,
+        "avg": 237306.42857142858,
+        "min": 190000,
+        "max": 300000,
+        "city": "草津市"
+      },
+      {
+        "n": 8,
+        "avg": 252931.875,
+        "min": 195500,
+        "max": 312000,
+        "city": "守山市"
+      }
+    ]
+  }
+}
