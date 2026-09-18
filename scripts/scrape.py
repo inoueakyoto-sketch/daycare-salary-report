@@ -8,12 +8,17 @@
 - job-medley.com の robots.txt は /apl/, /nm/, /ot/, /pt/, /st/, /cp/, /facility/ を
   一般UAに対して制限していないため、当該パスのみを対象にする。
 - 取得前に robots.txt を都度確認し、Disallow に一致する場合はそのセクションをスキップする。
-- 解析はページ構造の変化に強くするため、HTMLをテキスト化した上で
-  施設名らしき行 + 給与パターン + 雇用形態パターンの近接マッチで抽出する
-  (厳密なCSSセレクタには依存しない)。
-- 取得や解析に失敗したセクションがあっても、既存のsummary.jsonを保持し
+- 解析は「求人個別ページへのリンク(/apl/12345/ のような数値ID付きURL)を含む見出し」を
+  求人カードの起点として検出し、そのカード内(次のカードが始まるまでの範囲)に限定して
+  給与・雇用形態を探す方式にしている。これにより、広告コピー等の無関係なテキストを
+  施設名や給与と誤って結び付けることを防ぐ。
+- 各行には、集計値の根拠を後から確認できるよう、求人個別ページの実URL(source_url)を
+  必ず保持する。URLが取得できなかった行は採用しない。
+- 取得や解析に失敗した場合や、明らかに不自然な結果(件数が極端に少ない/多い、
+  相場からかけ離れた金額)が出た場合は、既存のsummary.jsonを保持し
   サイト全体を壊さないようにする(フェイルソフト)。
 """
+import csv
 import json
 import re
 import sys
@@ -24,7 +29,7 @@ from pathlib import Path
 from datetime import date
 
 BASE = "https://job-medley.com"
-UA = "Mozilla/5.0 (compatible; DaycareSalaryReportBot/1.0; +https://github.com/)"
+UA = "Mozilla/5.0 (compatible; DaycareSalaryReportBot/1.0; +https://github.com/inoueakyoto-sketch/daycare-salary-report)"
 
 CITY_CODES = {
     "大津市": "25201",
@@ -39,12 +44,26 @@ ROLE_PATHS = {
     "専門職員": ["ot", "pt", "st", "cp"],
 }
 
-EXCLUDE_KEYWORDS = ["児童発達支援事業所", "コペルプラス", "レモネードキッズ", "あおい湖"]
-# ↑ 児童発達支援(0-6歳)専用で放課後等デイサービスを行っていないと判明している施設名の一部。
-#   将来的に事業所一覧(WAM NET等)との突合に置き換えるのが望ましい。
+# 放課後等デイサービスの求人であることを確認するためのキーワード
+# (job-medleyのカテゴリページには近縁の児童発達支援など他サービスの求人も混在するため)
+INCLUDE_HINT = ["放課後等デイサービス", "放課後デイサービス", "放デイ", "学童"]
+EXCLUDE_HINT = ["児童発達支援事業所", "児童発達支援センター"]  # 放課後等デイを併記しない限り除外
 
+# 求人個別ページのURLパターン (例: /apl/791850/ , /nm/637160/ )
+# <h3>見出し内のリンクを想定しているが、マークアップの変化に備えて
+# 「該当パス+数値IDへのリンク」自体を求人カードの起点として広めに検出する。
+CARD_RE = re.compile(
+    r'<a[^>]+href="(/(?:apl|nm|ot|pt|st|cp)/(\d+)/[^"]*)"[^>]*>(.*?)</a>',
+    re.S,
+)
 SALARY_RE = re.compile(r"(月給|時給)\s*([\d,]{3,7})\s*円?\s*(?:[~〜～\-]\s*([\d,]{3,7})\s*円)?")
 EMPLOY_RE = re.compile(r"(正職員|正社員|パート|アルバイト|契約社員|非常勤)")
+
+# 明らかに相場から外れる値は取り込まない(パース事故のフェイルセーフ)
+PLAUSIBLE = {
+    "月給": (100_000, 600_000),
+    "時給": (900, 3_500),
+}
 
 OUT_DIR = Path(__file__).resolve().parent.parent / "data"
 CSV_PATH = OUT_DIR / "jobs_raw.csv"
@@ -75,55 +94,63 @@ def fetch(path: str) -> str | None:
         return None
 
 
-def html_to_lines(html: str) -> list[str]:
-    # script/styleを除去
-    html = re.sub(r"<(script|style)[^>]*>.*?</\1>", " ", html, flags=re.S | re.I)
-    # ブロック要素の終わりを改行に変換
-    html = re.sub(r"</(h1|h2|h3|h4|li|p|div|tr|td|dt|dd|span)>", "\n", html, flags=re.I)
-    html = re.sub(r"<br\s*/?>", "\n", html, flags=re.I)
-    text = re.sub(r"<[^>]+>", "", html)
-    text = re.sub(r"&nbsp;", " ", text)
-    text = re.sub(r"&amp;", "&", text)
-    lines = [l.strip() for l in text.splitlines()]
-    return [l for l in lines if l]
+def strip_tags(s: str) -> str:
+    s = re.sub(r"<[^>]+>", "", s)
+    s = s.replace("&nbsp;", " ").replace("&amp;", "&").replace("&quot;", '"').replace("&#39;", "'")
+    return re.sub(r"\s+", " ", s).strip()
 
 
-def looks_like_facility_name(line: str) -> bool:
-    if len(line) < 3 or len(line) > 60:
-        return False
-    if SALARY_RE.search(line) or EMPLOY_RE.search(line):
-        return False
-    if any(k in line for k in ["求人", "採用", "検索", "ログイン", "会員", "新着", "ジョブメドレー", "件"]):
-        return False
-    return True
-
-
-def parse_jobs(html: str, city: str, role: str, source: str) -> list[dict]:
-    lines = html_to_lines(html)
+def parse_jobs(html: str, city: str, role: str) -> list[dict]:
+    matches = list(CARD_RE.finditer(html))
     jobs = []
-    last_facility = None
-    for line in lines:
-        if looks_like_facility_name(line):
-            last_facility = line
+    for i, m in enumerate(matches):
+        href, job_id, raw_name = m.group(1), m.group(2), m.group(3)
+        facility = strip_tags(raw_name)
+        NON_NAME = {"続きを見る", "求人を見る", "詳細を見る", "お気に入り", "キープする", "NEW", "No image", ""}
+        if not facility or len(facility) < 2 or facility in NON_NAME:
             continue
-        sal = SALARY_RE.search(line)
-        if sal and last_facility:
-            pay_type = sal.group(1)
+
+        # このカードの範囲 = このマッチの終わりから次のカードの開始まで
+        start = m.end()
+        end = matches[i + 1].start() if i + 1 < len(matches) else min(len(html), start + 4000)
+        block = html[start:end]
+        block_text = strip_tags(block)
+
+        # 放課後等デイサービスの求人か確認(施設名・カード本文どちらかにヒントがあればOK)
+        haystack = facility + " " + block_text
+        if any(k in haystack for k in EXCLUDE_HINT) and not any(k in haystack for k in INCLUDE_HINT):
+            continue
+
+        sal = SALARY_RE.search(block_text)
+        if not sal:
+            continue
+        pay_type = "月給" if sal.group(1) == "月給" else "時給"
+        try:
             pay_min = int(sal.group(2).replace(",", ""))
             pay_max = int(sal.group(3).replace(",", "")) if sal.group(3) else pay_min
-            emp = EMPLOY_RE.search(line)
-            employment = "正職員" if (emp and emp.group(1) in ("正職員", "正社員")) else (
-                "パート" if emp else "不明"
-            )
-            if any(k in last_facility for k in EXCLUDE_KEYWORDS):
-                continue
-            jobs.append({
-                "city": city, "facility": last_facility, "role": role,
-                "employment": employment,
-                "pay_type": "月給" if pay_type == "月給" else "時給",
-                "pay_min": pay_min, "pay_max": pay_max,
-                "source": source,
-            })
+        except ValueError:
+            continue
+
+        lo, hi = PLAUSIBLE[pay_type]
+        if not (lo <= pay_min <= hi and lo <= pay_max <= hi):
+            print(f"[skip] implausible salary {pay_type} {pay_min}-{pay_max} for {facility}", file=sys.stderr)
+            continue
+
+        emp = EMPLOY_RE.search(block_text)
+        employment = "正職員" if (emp and emp.group(1) in ("正職員", "正社員")) else (
+            "パート" if emp else "不明"
+        )
+
+        jobs.append({
+            "city": city,
+            "facility": facility,
+            "role": role,
+            "employment": employment,
+            "pay_type": pay_type,
+            "pay_min": pay_min,
+            "pay_max": pay_max,
+            "source_url": f"{BASE}{href.split('?')[0]}",
+        })
     return jobs
 
 
@@ -131,7 +158,7 @@ def dedupe(jobs: list[dict]) -> list[dict]:
     seen = set()
     out = []
     for j in jobs:
-        key = (j["city"], j["facility"], j["role"], j["employment"], j["pay_type"], j["pay_min"], j["pay_max"])
+        key = j["source_url"]
         if key in seen:
             continue
         seen.add(key)
@@ -177,17 +204,17 @@ def main():
                 time.sleep(1)  # 負荷をかけないための間隔
                 if not html:
                     continue
-                jobs = parse_jobs(html, city, role, f"job-medley {p}/city{code}")
+                jobs = parse_jobs(html, city, role)
                 all_jobs.extend(jobs)
+                print(f"[info] {path} -> {len(jobs)} rows")
 
     all_jobs = dedupe(all_jobs)
+    print(f"[info] total after dedupe: {len(all_jobs)}")
 
     if len(all_jobs) < 20:
-        # 解析に失敗している可能性が高い場合は既存データを壊さない
         print(f"[warn] only {len(all_jobs)} rows parsed; keeping previous data untouched", file=sys.stderr)
         if JSON_PATH.exists():
-            return
-        # 初回実行で0件なら空でも書き出す(後続で気づけるように)
+            sys.exit(1)  # ワークフロー側でコミットしないようにエラー終了させる
 
     summary = {
         "updated_at": date.today().strftime("%Y年%m月%d日"),
@@ -198,9 +225,8 @@ def main():
     OUT_DIR.mkdir(parents=True, exist_ok=True)
     JSON_PATH.write_text(json.dumps(summary, ensure_ascii=False, indent=2), encoding="utf-8")
 
-    import csv
     with CSV_PATH.open("w", newline="", encoding="utf-8") as f:
-        w = csv.DictWriter(f, fieldnames=["city", "facility", "role", "employment", "pay_type", "pay_min", "pay_max", "source"])
+        w = csv.DictWriter(f, fieldnames=["city", "facility", "role", "employment", "pay_type", "pay_min", "pay_max", "source_url"])
         w.writeheader()
         for r in all_jobs:
             w.writerow(r)

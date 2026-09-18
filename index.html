@@ -120,11 +120,11 @@
 
     <div class="card">
       <h2>事業所別 求人データ一覧</h2>
-      <p class="note">収集できた求人情報の全件（n=<span id="n-total"></span>）。出典はすべてジョブメドレー（job-medley.com、robots.txtでクロール許可されているページ）掲載の各事業所投稿求人です。</p>
+      <p class="note">収集できた求人情報の全件（n=<span id="n-total"></span>）。「出典」列のリンクから、ジョブメドレー上の該当求人の個別ページに直接アクセスして、金額の根拠をファクトチェックできます。</p>
       <div class="scroll">
         <table id="detail-table">
           <thead>
-            <tr><th>市</th><th>事業所</th><th>職種</th><th>雇用形態</th><th class="num">給与</th></tr>
+            <tr><th>市</th><th>事業所</th><th>職種</th><th>雇用形態</th><th class="num">給与</th><th>出典</th></tr>
           </thead>
           <tbody></tbody>
         </table>
@@ -138,9 +138,11 @@
         <p>そのため、robots.txtでクローリングが許可されている求人媒体「ジョブメドレー」（job-medley.com）に、各事業所自身が投稿した求人情報（施設名・職種・給与）を主データソースとして採用しています。児童発達支援専用（放課後等デイサービスを行っていない）事業所の求人は除外しています。</p>
         <ul>
           <li>給与は「月給/時給の下限〜上限」の中央値を1件のサンプルとして採用</li>
-          <li>同一事業所・同一職種で複数の専門職（OT/PT/ST/心理職）求人が同条件で掲載されている場合は重複として1件に統合</li>
+          <li>同一求人ページ(URL)からは1件のみ集計し、重複を除外</li>
+          <li>各行には求人個別ページへの直接リンク(出典列)を付けており、金額の根拠をその場で確認できる</li>
+          <li>相場から大きく外れる金額（月給10万円未満・60万円超、時給900円未満・3,500円超）は取得エラーの可能性が高いため自動的に除外</li>
           <li>件数(n)が少ないため、地域の給与相場の目安として参考程度にご利用ください</li>
-          <li>3日ごとにGitHub Actionsで再取得・再集計しています</li>
+          <li>3日ごとにGitHub Actionsで再取得・再集計しています。取得件数が極端に少ない場合は、直前の正常なデータを保持し上書きしません</li>
         </ul>
       </details>
     </div>
@@ -180,14 +182,19 @@ async function main() {
 
   renderBars('city-chart', data.summary.by_city_shido.map(c => ({role: c.city, avg: c.avg, n: c.n, min: c.min, max: c.max})), '円');
 
+  function esc(s) {
+    return String(s).replace(/[&<>"']/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
+  }
+
   const tbody = document.querySelector('#detail-table tbody');
   tbody.innerHTML = data.rows.map(r => `
     <tr>
-      <td><span class="city-tag">${r.city}</span></td>
-      <td class="name">${r.facility}</td>
-      <td>${roleLabel[r.role] || r.role}</td>
-      <td>${r.employment}</td>
+      <td><span class="city-tag">${esc(r.city)}</span></td>
+      <td class="name">${esc(r.facility)}</td>
+      <td>${esc(roleLabel[r.role] || r.role)}</td>
+      <td>${esc(r.employment)}</td>
       <td class="num">${r.pay_type === '月給' ? '月給 ' : '時給 '}${Number(r.pay_min).toLocaleString()}${r.pay_min !== r.pay_max ? '〜' + Number(r.pay_max).toLocaleString() : ''}円</td>
+      <td>${r.source_url ? `<a href="${esc(r.source_url)}" target="_blank" rel="noopener">求人ページ</a>` : esc(r.source || '')}</td>
     </tr>
   `).join('');
 }
