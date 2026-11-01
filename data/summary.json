@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026年10月31日",
+  "updated_at": "2026年11月01日",
   "rows": [
     {
       "city": "大津市",
@@ -823,6 +823,16 @@
     },
     {
       "city": "大津市",
+      "facility": "訪問看護ステーション湯ずの理学療法士求人",
+      "role": "専門職員",
+      "employment": "パート",
+      "pay_type": "時給",
+      "pay_min": 1400,
+      "pay_max": 1500,
+      "source_url": "https://job-medley.com/pt/92024/"
+    },
+    {
+      "city": "大津市",
       "facility": "整体院 まほうの手の理学療法士求人",
       "role": "専門職員",
       "employment": "不明",
@@ -850,16 +860,6 @@
       "pay_min": 1400,
       "pay_max": 1400,
       "source_url": "https://job-medley.com/pt/1715250/"
-    },
-    {
-      "city": "大津市",
-      "facility": "日本リハビリ訪問看護ステーション 膳所サテライトの理学療法士求人（パート・バイト）",
-      "role": "専門職員",
-      "employment": "パート",
-      "pay_type": "時給",
-      "pay_min": 1300,
-      "pay_max": 3000,
-      "source_url": "https://job-medley.com/pt/810772/"
     },
     {
       "city": "大津市",
@@ -1193,16 +1193,6 @@
     },
     {
       "city": "草津市",
-      "facility": "ジュニアスペースらいぶ草津アネックスの児童指導員/指導員求人（正職員）",
-      "role": "児童指導員",
-      "employment": "正職員",
-      "pay_type": "月給",
-      "pay_min": 262000,
-      "pay_max": 300000,
-      "source_url": "https://job-medley.com/apl/375575/"
-    },
-    {
-      "city": "草津市",
       "facility": "ジュニアスペースらいぶ草津の児童指導員/指導員求人（正職員）",
       "role": "児童指導員",
       "employment": "正職員",
@@ -1210,6 +1200,16 @@
       "pay_min": 262000,
       "pay_max": 300000,
       "source_url": "https://job-medley.com/apl/809406/"
+    },
+    {
+      "city": "草津市",
+      "facility": "ジュニアスペースらいぶ草津アネックスの児童指導員/指導員求人（正職員）",
+      "role": "児童指導員",
+      "employment": "正職員",
+      "pay_type": "月給",
+      "pay_min": 262000,
+      "pay_max": 300000,
+      "source_url": "https://job-medley.com/apl/375575/"
     },
     {
       "city": "草津市",
@@ -1599,7 +1599,7 @@
       "pay_type": "時給",
       "pay_min": 1500,
       "pay_max": 1500,
-      "source_url": "https://job-medley.com/pt/1464881/"
+      "source_url": "https://job-medley.com/pt/1529596/"
     },
     {
       "city": "草津市",
@@ -1609,7 +1609,7 @@
       "pay_type": "時給",
       "pay_min": 1500,
       "pay_max": 1500,
-      "source_url": "https://job-medley.com/pt/1529596/"
+      "source_url": "https://job-medley.com/pt/1464881/"
     },
     {
       "city": "草津市",
@@ -2366,7 +2366,7 @@
       },
       {
         "n": 59,
-        "avg": 1608.1186440677966,
+        "avg": 1596.2542372881355,
         "min": 1136,
         "max": 3000,
         "role": "専門職員"
