@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026年11月10日",
+  "updated_at": "2026年11月13日",
   "rows": [
     {
       "city": "大津市",
@@ -33,6 +33,16 @@
     },
     {
       "city": "大津市",
+      "facility": "放課後等デイサービス ひいらぎの-月希-の児童指導員/指導員求人（正職員）",
+      "role": "児発管",
+      "employment": "正職員",
+      "pay_type": "月給",
+      "pay_min": 195000,
+      "pay_max": 195000,
+      "source_url": "https://job-medley.com/apl/360011/"
+    },
+    {
+      "city": "大津市",
       "facility": "放課後等デイサービスまるさんかくしかくの放課後等デイサービススタッフ求人",
       "role": "児発管",
       "employment": "正職員",
@@ -44,7 +54,7 @@
     {
       "city": "大津市",
       "facility": "放課後等デイサービスまるさんかくしかくぜぜの児童指導員/指導員求人（正職員）",
-      "role": "児発管",
+      "role": "児童指導員",
       "employment": "正職員",
       "pay_type": "月給",
       "pay_min": 220000,
@@ -163,13 +173,23 @@
     },
     {
       "city": "大津市",
-      "facility": "放課後等デイサービス ひいらぎの-月希-の児童指導員/指導員求人（正職員）",
+      "facility": "放課後等デイサービスぐっどらいふの児童指導員/指導員求人（パート・バイト）",
       "role": "児童指導員",
-      "employment": "正職員",
-      "pay_type": "月給",
-      "pay_min": 195000,
-      "pay_max": 195000,
-      "source_url": "https://job-medley.com/apl/360011/"
+      "employment": "パート",
+      "pay_type": "時給",
+      "pay_min": 1140,
+      "pay_max": 1300,
+      "source_url": "https://job-medley.com/apl/373876/"
+    },
+    {
+      "city": "大津市",
+      "facility": "放課後等デイサービス ひいらぎの-月希-の児童指導員/指導員求人（パート・バイト）",
+      "role": "児童指導員",
+      "employment": "パート",
+      "pay_type": "時給",
+      "pay_min": 1136,
+      "pay_max": 1136,
+      "source_url": "https://job-medley.com/apl/360012/"
     },
     {
       "city": "大津市",
@@ -253,16 +273,6 @@
     },
     {
       "city": "大津市",
-      "facility": "放課後等デイサービスぐっどらいふの児童指導員/指導員求人（パート・バイト）",
-      "role": "児童指導員",
-      "employment": "パート",
-      "pay_type": "時給",
-      "pay_min": 1136,
-      "pay_max": 1300,
-      "source_url": "https://job-medley.com/apl/373876/"
-    },
-    {
-      "city": "大津市",
       "facility": "成基の療育教室 ゴールフリーB5大津石山教室の児童指導員求人",
       "role": "児童指導員",
       "employment": "パート",
@@ -323,13 +333,13 @@
     },
     {
       "city": "大津市",
-      "facility": "放課後等デイサービス ひいらぎの-月希-の児童指導員/指導員求人（パート・バイト）",
-      "role": "児童指導員",
-      "employment": "パート",
-      "pay_type": "時給",
-      "pay_min": 1136,
-      "pay_max": 1136,
-      "source_url": "https://job-medley.com/apl/360012/"
+      "facility": "放課後等デイサービス ひいらぎの-月希-の作業療法士求人（正職員）",
+      "role": "専門職員",
+      "employment": "正職員",
+      "pay_type": "月給",
+      "pay_min": 215000,
+      "pay_max": 215000,
+      "source_url": "https://job-medley.com/ot/1733228/"
     },
     {
       "city": "大津市",
@@ -463,13 +473,13 @@
     },
     {
       "city": "大津市",
-      "facility": "放課後等デイサービス ひいらぎの-月希-の作業療法士求人（正職員）",
+      "facility": "放課後等デイサービス ひいらぎの-月希-の作業療法士求人（パート・バイト）",
       "role": "専門職員",
-      "employment": "正職員",
-      "pay_type": "月給",
-      "pay_min": 215000,
-      "pay_max": 215000,
-      "source_url": "https://job-medley.com/ot/1733228/"
+      "employment": "パート",
+      "pay_type": "時給",
+      "pay_min": 1250,
+      "pay_max": 1250,
+      "source_url": "https://job-medley.com/ot/1733231/"
     },
     {
       "city": "大津市",
@@ -553,13 +563,13 @@
     },
     {
       "city": "大津市",
-      "facility": "放課後等デイサービス ひいらぎの-月希-の作業療法士求人（パート・バイト）",
+      "facility": "放課後等デイサービス ひいらぎの-月希-の理学療法士求人（正職員）",
       "role": "専門職員",
-      "employment": "パート",
-      "pay_type": "時給",
-      "pay_min": 1250,
-      "pay_max": 1250,
-      "source_url": "https://job-medley.com/ot/1733231/"
+      "employment": "正職員",
+      "pay_type": "月給",
+      "pay_min": 215000,
+      "pay_max": 215000,
+      "source_url": "https://job-medley.com/pt/1733227/"
     },
     {
       "city": "大津市",
@@ -813,13 +823,23 @@
     },
     {
       "city": "大津市",
-      "facility": "放課後等デイサービス ひいらぎの-月希-の理学療法士求人（正職員）",
+      "facility": "ぐらんしーるデイサービスセンターの機能訓練指導員求人",
       "role": "専門職員",
       "employment": "正職員",
-      "pay_type": "月給",
-      "pay_min": 215000,
-      "pay_max": 215000,
-      "source_url": "https://job-medley.com/pt/1733227/"
+      "pay_type": "時給",
+      "pay_min": 1400,
+      "pay_max": 1400,
+      "source_url": "https://job-medley.com/pt/1715250/"
+    },
+    {
+      "city": "大津市",
+      "facility": "放課後等デイサービス ひいらぎの-月希-の理学療法士求人（パート・バイト）",
+      "role": "専門職員",
+      "employment": "パート",
+      "pay_type": "時給",
+      "pay_min": 1250,
+      "pay_max": 1250,
+      "source_url": "https://job-medley.com/pt/1733230/"
     },
     {
       "city": "大津市",
@@ -843,23 +863,13 @@
     },
     {
       "city": "大津市",
-      "facility": "訪問看護ステーション湯ずの理学療法士求人",
+      "facility": "放課後等デイサービス ひいらぎの-月希-の言語聴覚士求人（正職員）",
       "role": "専門職員",
-      "employment": "パート",
-      "pay_type": "時給",
-      "pay_min": 1400,
-      "pay_max": 1500,
-      "source_url": "https://job-medley.com/pt/92024/"
-    },
-    {
-      "city": "大津市",
-      "facility": "整体院 まほうの手の理学療法士求人",
-      "role": "専門職員",
-      "employment": "不明",
+      "employment": "正職員",
       "pay_type": "月給",
-      "pay_min": 200000,
-      "pay_max": 500000,
-      "source_url": "https://job-medley.com/pt/683094/"
+      "pay_min": 215000,
+      "pay_max": 215000,
+      "source_url": "https://job-medley.com/st/1733229/"
     },
     {
       "city": "大津市",
@@ -933,13 +943,13 @@
     },
     {
       "city": "大津市",
-      "facility": "放課後等デイサービス ひいらぎの-月希-の言語聴覚士求人（正職員）",
+      "facility": "放課後等デイサービス ひいらぎの-月希-の言語聴覚士求人（パート・バイト）",
       "role": "専門職員",
-      "employment": "正職員",
-      "pay_type": "月給",
-      "pay_min": 215000,
-      "pay_max": 215000,
-      "source_url": "https://job-medley.com/st/1733229/"
+      "employment": "パート",
+      "pay_type": "時給",
+      "pay_min": 1250,
+      "pay_max": 1250,
+      "source_url": "https://job-medley.com/st/1733232/"
     },
     {
       "city": "大津市",
@@ -1020,16 +1030,6 @@
       "pay_min": 1870,
       "pay_max": 1930,
       "source_url": "https://job-medley.com/st/1405031/"
-    },
-    {
-      "city": "大津市",
-      "facility": "放課後等デイサービス ひいらぎの-月希-の言語聴覚士求人（パート・バイト）",
-      "role": "専門職員",
-      "employment": "パート",
-      "pay_type": "時給",
-      "pay_min": 1250,
-      "pay_max": 1250,
-      "source_url": "https://job-medley.com/st/1733232/"
     },
     {
       "city": "大津市",
@@ -1193,6 +1193,16 @@
     },
     {
       "city": "草津市",
+      "facility": "ともいくの森の児童指導員/指導員求人（パート・バイト）",
+      "role": "児童指導員",
+      "employment": "パート",
+      "pay_type": "時給",
+      "pay_min": 1148,
+      "pay_max": 1148,
+      "source_url": "https://job-medley.com/apl/1051482/"
+    },
+    {
+      "city": "草津市",
       "facility": "プティット草津ルームの児童指導員/指導員求人（パート・バイト）",
       "role": "児童指導員",
       "employment": "パート",
@@ -1283,13 +1293,13 @@
     },
     {
       "city": "草津市",
-      "facility": "ともいくの森の児童指導員/指導員求人（パート・バイト）",
-      "role": "児童指導員",
-      "employment": "パート",
-      "pay_type": "時給",
-      "pay_min": 1148,
-      "pay_max": 1148,
-      "source_url": "https://job-medley.com/apl/1051482/"
+      "facility": "買いもんデイミナクサの機能訓練指導員求人",
+      "role": "専門職員",
+      "employment": "不明",
+      "pay_type": "月給",
+      "pay_min": 237000,
+      "pay_max": 245000,
+      "source_url": "https://job-medley.com/ot/1767293/"
     },
     {
       "city": "草津市",
@@ -1320,16 +1330,6 @@
       "pay_min": 232120,
       "pay_max": 232120,
       "source_url": "https://job-medley.com/ot/1187583/"
-    },
-    {
-      "city": "草津市",
-      "facility": "買いもんデイミナクサの機能訓練指導員求人",
-      "role": "専門職員",
-      "employment": "不明",
-      "pay_type": "月給",
-      "pay_min": 237000,
-      "pay_max": 245000,
-      "source_url": "https://job-medley.com/ot/1767293/"
     },
     {
       "city": "草津市",
@@ -1393,16 +1393,6 @@
     },
     {
       "city": "草津市",
-      "facility": "プティット草津ルームの作業療法士求人（パート・バイト）",
-      "role": "専門職員",
-      "employment": "パート",
-      "pay_type": "時給",
-      "pay_min": 1154,
-      "pay_max": 1334,
-      "source_url": "https://job-medley.com/ot/1759085/"
-    },
-    {
-      "city": "草津市",
       "facility": "買いもんデイミナクサの機能訓練指導員求人",
       "role": "専門職員",
       "employment": "パート",
@@ -1410,6 +1400,16 @@
       "pay_min": 1300,
       "pay_max": 1500,
       "source_url": "https://job-medley.com/ot/1767298/"
+    },
+    {
+      "city": "草津市",
+      "facility": "プティット草津ルームの作業療法士求人（パート・バイト）",
+      "role": "専門職員",
+      "employment": "パート",
+      "pay_type": "時給",
+      "pay_min": 1154,
+      "pay_max": 1334,
+      "source_url": "https://job-medley.com/ot/1759085/"
     },
     {
       "city": "草津市",
@@ -1463,6 +1463,16 @@
     },
     {
       "city": "草津市",
+      "facility": "買いもんデイミナクサの機能訓練指導員求人",
+      "role": "専門職員",
+      "employment": "不明",
+      "pay_type": "月給",
+      "pay_min": 237000,
+      "pay_max": 245000,
+      "source_url": "https://job-medley.com/pt/1767292/"
+    },
+    {
+      "city": "草津市",
       "facility": "こどもサポート教室「きらり」草津駅前校第2の理学療法士求人",
       "role": "専門職員",
       "employment": "正職員",
@@ -1480,16 +1490,6 @@
       "pay_min": 232120,
       "pay_max": 232120,
       "source_url": "https://job-medley.com/pt/1187771/"
-    },
-    {
-      "city": "草津市",
-      "facility": "買いもんデイミナクサの機能訓練指導員求人",
-      "role": "専門職員",
-      "employment": "不明",
-      "pay_type": "月給",
-      "pay_min": 237000,
-      "pay_max": 245000,
-      "source_url": "https://job-medley.com/pt/1767292/"
     },
     {
       "city": "草津市",
@@ -1573,6 +1573,16 @@
     },
     {
       "city": "草津市",
+      "facility": "買いもんデイミナクサの機能訓練指導員求人",
+      "role": "専門職員",
+      "employment": "パート",
+      "pay_type": "時給",
+      "pay_min": 1300,
+      "pay_max": 1500,
+      "source_url": "https://job-medley.com/pt/1767297/"
+    },
+    {
+      "city": "草津市",
       "facility": "訪問看護ハートケアしがの理学療法士求人",
       "role": "専門職員",
       "employment": "パート",
@@ -1590,16 +1600,6 @@
       "pay_min": 1710,
       "pay_max": 1710,
       "source_url": "https://job-medley.com/pt/1746913/"
-    },
-    {
-      "city": "草津市",
-      "facility": "買いもんデイミナクサの機能訓練指導員求人",
-      "role": "専門職員",
-      "employment": "パート",
-      "pay_type": "時給",
-      "pay_min": 1300,
-      "pay_max": 1500,
-      "source_url": "https://job-medley.com/pt/1767297/"
     },
     {
       "city": "草津市",
@@ -1663,6 +1663,16 @@
     },
     {
       "city": "草津市",
+      "facility": "買いもんデイミナクサの機能訓練指導員求人",
+      "role": "専門職員",
+      "employment": "不明",
+      "pay_type": "月給",
+      "pay_min": 237000,
+      "pay_max": 245000,
+      "source_url": "https://job-medley.com/st/1767294/"
+    },
+    {
+      "city": "草津市",
       "facility": "リニエプラッツ草津の言語聴覚士求人（正職員）",
       "role": "専門職員",
       "employment": "正職員",
@@ -1703,16 +1713,6 @@
     },
     {
       "city": "草津市",
-      "facility": "買いもんデイミナクサの機能訓練指導員求人",
-      "role": "専門職員",
-      "employment": "不明",
-      "pay_type": "月給",
-      "pay_min": 237000,
-      "pay_max": 245000,
-      "source_url": "https://job-medley.com/st/1767294/"
-    },
-    {
-      "city": "草津市",
       "facility": "指定居宅介護支援事業所 ケアプランそらの言語聴覚士求人",
       "role": "専門職員",
       "employment": "正職員",
@@ -1743,16 +1743,6 @@
     },
     {
       "city": "草津市",
-      "facility": "プティット草津ルームの言語聴覚士求人（パート・バイト）",
-      "role": "専門職員",
-      "employment": "パート",
-      "pay_type": "時給",
-      "pay_min": 1154,
-      "pay_max": 1334,
-      "source_url": "https://job-medley.com/st/1690388/"
-    },
-    {
-      "city": "草津市",
       "facility": "買いもんデイミナクサの機能訓練指導員求人",
       "role": "専門職員",
       "employment": "パート",
@@ -1760,6 +1750,16 @@
       "pay_min": 1300,
       "pay_max": 1500,
       "source_url": "https://job-medley.com/st/1767300/"
+    },
+    {
+      "city": "草津市",
+      "facility": "プティット草津ルームの言語聴覚士求人（パート・バイト）",
+      "role": "専門職員",
+      "employment": "パート",
+      "pay_type": "時給",
+      "pay_min": 1154,
+      "pay_max": 1334,
+      "source_url": "https://job-medley.com/st/1690388/"
     },
     {
       "city": "草津市",
@@ -1863,7 +1863,7 @@
     },
     {
       "city": "守山市",
-      "facility": "放課後等デイサービス凜守山の指導員求人",
+      "facility": "放課後等デイサービス凜守山の児童指導員求人",
       "role": "児発管",
       "employment": "正職員",
       "pay_type": "月給",
@@ -1943,23 +1943,33 @@
     },
     {
       "city": "守山市",
-      "facility": "放課後等デイサービス凜元町の指導員求人",
-      "role": "児童指導員",
-      "employment": "パート",
-      "pay_type": "時給",
-      "pay_min": 1250,
-      "pay_max": 1496,
-      "source_url": "https://job-medley.com/apl/291494/"
-    },
-    {
-      "city": "守山市",
-      "facility": "放課後等デイサービス凜守山の指導員求人",
+      "facility": "放課後等デイサービス凜守山の児童指導員求人",
       "role": "児童指導員",
       "employment": "パート",
       "pay_type": "時給",
       "pay_min": 1250,
       "pay_max": 1496,
       "source_url": "https://job-medley.com/apl/291502/"
+    },
+    {
+      "city": "守山市",
+      "facility": "通所支援事業所 YELLの指導員求人",
+      "role": "児童指導員",
+      "employment": "パート",
+      "pay_type": "時給",
+      "pay_min": 1150,
+      "pay_max": 1750,
+      "source_url": "https://job-medley.com/apl/491554/"
+    },
+    {
+      "city": "守山市",
+      "facility": "放課後等デイサービス凜元町の児童指導員求人",
+      "role": "児童指導員",
+      "employment": "パート",
+      "pay_type": "時給",
+      "pay_min": 1250,
+      "pay_max": 1496,
+      "source_url": "https://job-medley.com/apl/291494/"
     },
     {
       "city": "守山市",
@@ -2023,16 +2033,6 @@
     },
     {
       "city": "守山市",
-      "facility": "通所支援事業所 YELLの指導員求人",
-      "role": "児童指導員",
-      "employment": "パート",
-      "pay_type": "時給",
-      "pay_min": 1150,
-      "pay_max": 1750,
-      "source_url": "https://job-medley.com/apl/491554/"
-    },
-    {
-      "city": "守山市",
       "facility": "介護老人保健施設守山すみれ苑のセラピスト求人",
       "role": "専門職員",
       "employment": "正職員",
@@ -2070,6 +2070,16 @@
       "pay_min": 250000,
       "pay_max": 350000,
       "source_url": "https://job-medley.com/ot/1462599/"
+    },
+    {
+      "city": "守山市",
+      "facility": "通所支援事業所 YELLの作業療法士求人",
+      "role": "専門職員",
+      "employment": "パート",
+      "pay_type": "時給",
+      "pay_min": 1500,
+      "pay_max": 2100,
+      "source_url": "https://job-medley.com/ot/491557/"
     },
     {
       "city": "守山市",
@@ -2113,16 +2123,6 @@
     },
     {
       "city": "守山市",
-      "facility": "通所支援事業所 YELLの作業療法士求人",
-      "role": "専門職員",
-      "employment": "パート",
-      "pay_type": "時給",
-      "pay_min": 1500,
-      "pay_max": 2100,
-      "source_url": "https://job-medley.com/ot/491557/"
-    },
-    {
-      "city": "守山市",
       "facility": "児童発達支援・放課後等デイサービス ドリーム HARIMADAの理学療法士求人（正職員）",
       "role": "専門職員",
       "employment": "正職員",
@@ -2160,6 +2160,16 @@
       "pay_min": 197000,
       "pay_max": 337000,
       "source_url": "https://job-medley.com/pt/154342/"
+    },
+    {
+      "city": "守山市",
+      "facility": "通所支援事業所 YELLの理学療法士求人",
+      "role": "専門職員",
+      "employment": "パート",
+      "pay_type": "時給",
+      "pay_min": 1500,
+      "pay_max": 2100,
+      "source_url": "https://job-medley.com/pt/491556/"
     },
     {
       "city": "守山市",
@@ -2213,16 +2223,6 @@
     },
     {
       "city": "守山市",
-      "facility": "通所支援事業所 YELLの理学療法士求人",
-      "role": "専門職員",
-      "employment": "パート",
-      "pay_type": "時給",
-      "pay_min": 1500,
-      "pay_max": 2100,
-      "source_url": "https://job-medley.com/pt/491556/"
-    },
-    {
-      "city": "守山市",
       "facility": "児童発達支援・放課後等デイサービス ドリーム HARIMADAの言語聴覚士求人（正職員）",
       "role": "専門職員",
       "employment": "正職員",
@@ -2250,6 +2250,16 @@
       "pay_min": 250000,
       "pay_max": 350000,
       "source_url": "https://job-medley.com/st/1462608/"
+    },
+    {
+      "city": "守山市",
+      "facility": "通所支援事業所 YELLの言語聴覚士求人",
+      "role": "専門職員",
+      "employment": "パート",
+      "pay_type": "時給",
+      "pay_min": 1500,
+      "pay_max": 2100,
+      "source_url": "https://job-medley.com/st/491797/"
     },
     {
       "city": "守山市",
@@ -2300,16 +2310,6 @@
       "pay_min": 1400,
       "pay_max": 1400,
       "source_url": "https://job-medley.com/st/1611388/"
-    },
-    {
-      "city": "守山市",
-      "facility": "通所支援事業所 YELLの言語聴覚士求人",
-      "role": "専門職員",
-      "employment": "パート",
-      "pay_type": "時給",
-      "pay_min": 1500,
-      "pay_max": 2100,
-      "source_url": "https://job-medley.com/st/491797/"
     },
     {
       "city": "守山市",
@@ -2366,21 +2366,21 @@
     "monthly": [
       {
         "n": 15,
-        "avg": 272369.6666666667,
+        "avg": 269703.0,
         "min": 172000,
         "max": 380000,
         "role": "児発管"
       },
       {
         "n": 28,
-        "avg": 235616.42857142858,
-        "min": 195000,
+        "avg": 237045.0,
+        "min": 200000,
         "max": 350000,
         "role": "児童指導員"
       },
       {
-        "n": 96,
-        "avg": 272722.7395833333,
+        "n": 95,
+        "avg": 271909.2947368421,
         "min": 172000,
         "max": 500000,
         "role": "専門職員"
@@ -2389,14 +2389,14 @@
     "hourly": [
       {
         "n": 35,
-        "avg": 1285.0428571428572,
+        "avg": 1285.1,
         "min": 1136,
         "max": 1800,
         "role": "児童指導員"
       },
       {
-        "n": 62,
-        "avg": 1603.6048387096773,
+        "n": 63,
+        "avg": 1597.1984126984128,
         "min": 1136,
         "max": 3000,
         "role": "専門職員"
@@ -2405,8 +2405,8 @@
     "by_city_shido": [
       {
         "n": 12,
-        "avg": 227916.66666666666,
-        "min": 195000,
+        "avg": 231250.0,
+        "min": 200000,
         "max": 350000,
         "city": "大津市"
       },
